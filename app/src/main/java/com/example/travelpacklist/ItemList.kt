@@ -24,6 +24,13 @@ class ItemList : AppCompatActivity() {
         val quantities = intent.getIntArrayExtra("quantities") ?: intArrayOf()
 
         //Displaying packing list button which runs when user clicks button
+        btnDisplay.setOnClickListener{
+            //Error handling to check if the item array is empty
+            if (items.isEmpty()){
+                txtList.text = "No items found"
+                return@setOnClickListener
+            }
+        }
 
             //Error Handling to check if items in array are missing
 
