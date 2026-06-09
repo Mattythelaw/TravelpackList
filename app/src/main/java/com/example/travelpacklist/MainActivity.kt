@@ -10,6 +10,10 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
 class MainActivity : AppCompatActivity() {
+
+    //Declaring the four parallel arrays so it can be accessed in screen 2
+    val items = arrayOf("T-shirts and pants", "Toothbrush", "Shoes", "Passport")
+    
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
