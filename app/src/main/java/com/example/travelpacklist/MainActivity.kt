@@ -28,6 +28,10 @@ class MainActivity : AppCompatActivity() {
             itemDetails.text = "Please enter the details of the packing list"
         }
 
+        btnItems.setOnClickListener {
+
+        }
+
 
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
