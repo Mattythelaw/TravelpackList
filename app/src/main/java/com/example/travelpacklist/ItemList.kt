@@ -55,6 +55,8 @@ class ItemList : AppCompatActivity() {
                 txtList.text = "No items with 2 or more quantities"
                 return@setOnClickListener
             }
+            //Displaying the final string in the text view
+            txtList.text = display
         }
 
 
