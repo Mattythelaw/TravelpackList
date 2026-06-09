@@ -22,8 +22,6 @@ class MainActivity : AppCompatActivity() {
         "Don't forget this!"
     )
 
-
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -39,8 +37,20 @@ class MainActivity : AppCompatActivity() {
 
         //The button listens for the user's clicks after that the user will be asked to enter
         //the details for the packing list
+        //Adding the packing list button which shows the packing list details
+        //"i" is commonly used for the index
         packingBtn.setOnClickListener {
-            itemDetails.text = "Please enter the details of the packing list"
+            var display = "Packing list:\n\n"
+            for (i in items.indices) {
+                display += "Item: ${items[i]}\n"
+                display += "Category: ${categories[i]}\n"
+                display += "Quantity: ${quantities[i]}\n"
+                display += "Comments: ${comments[i]}\n\n"
+            }
+            //Displaying the items
+            itemDetails.text = display
+
+
         }
 
         btnItems.setOnClickListener {
