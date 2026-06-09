@@ -15,7 +15,12 @@ class MainActivity : AppCompatActivity() {
     val items = arrayOf("T-shirts and pants", "Toothbrush", "Shoes", "Passport")
     val categories = arrayOf("Clothing", "Toiletries", "Clothing", "Documents")
     val quantities = arrayOf(5, 1, 2, 1)
-    
+    val comments = arrayOf(
+        "Comfortable for travel",
+        "Essential for hygiene" ,
+        "Walking and smart casual",
+        "Don't forget this!"
+    )
 
 
 
