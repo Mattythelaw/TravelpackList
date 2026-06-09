@@ -46,12 +46,17 @@ class ItemList : AppCompatActivity() {
                     display += " ${items[i]} - Quantity: ${quantities[i]}\n\n"
                     found = true
                 }
-                //Moving to next item 
+                //Moving to next item
                 i++
 
             }
+            // Error handling  with no items with 2 or more quantities found
+            if (!found) {
+                txtList.text = "No items with 2 or more quantities"
+                return@setOnClickListener
+            }
         }
-            //Error Handling to check if items in array are missing
+
 
 
 
