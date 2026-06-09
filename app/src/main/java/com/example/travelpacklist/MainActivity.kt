@@ -1,5 +1,6 @@
 package com.example.travelpacklist
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
@@ -29,6 +30,8 @@ class MainActivity : AppCompatActivity() {
         }
 
         btnItems.setOnClickListener {
+            val intent = Intent(this, ItemList::class.java)
+            startActivity(intent)
 
         }
 
