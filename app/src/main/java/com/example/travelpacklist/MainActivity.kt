@@ -60,6 +60,10 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
 
         }
+        //An exit button which closes the app
+        exitBtn.setOnClickListener {
+            finish()
+        }
 
 
 
