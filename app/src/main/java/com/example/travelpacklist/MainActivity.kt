@@ -17,6 +17,12 @@ class MainActivity : AppCompatActivity() {
         val itemDetails = findViewById<TextView>(R.id.itemDetails)
         val packingBtn = findViewById<Button>(R.id.packingBtn)
 
+        packingBtn.setOnClickListener {
+            itemDetails.text = "Please enter the details of the packing list"
+        }
+
+
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
