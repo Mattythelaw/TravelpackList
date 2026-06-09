@@ -1,5 +1,6 @@
 package com.example.travelpacklist
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
@@ -58,6 +59,14 @@ class ItemList : AppCompatActivity() {
             //Displaying the final string in the text view
             txtList.text = display
         }
+
+        //Button which takes you back to the main screen
+        btnBack.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP
+            startActivity(intent)
+        }
+    
 
 
 
