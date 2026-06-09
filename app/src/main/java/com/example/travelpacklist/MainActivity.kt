@@ -50,12 +50,13 @@ class MainActivity : AppCompatActivity() {
             //Displaying the items
             itemDetails.text = display
 
-
         }
 
         btnItems.setOnClickListener {
             //It allows navigation to the ItemList screen (Screen 2)
             val intent = Intent(this, ItemList::class.java)
+            intent.putExtra("items", items)
+            intent.putExtra("quantities", quantities)
             startActivity(intent)
 
         }
