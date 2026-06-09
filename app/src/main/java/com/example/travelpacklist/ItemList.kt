@@ -24,14 +24,33 @@ class ItemList : AppCompatActivity() {
         val quantities = intent.getIntArrayExtra("quantities") ?: intArrayOf()
 
         //Displaying packing list button which runs when user clicks button
-        btnDisplay.setOnClickListener{
+        btnDisplay.setOnClickListener {
             //Error handling to check if the item array is empty
-            if (items.isEmpty()){
+            if (items.isEmpty()) {
                 txtList.text = "No items found"
                 return@setOnClickListener
             }
-        }
+            //variable for building the display string
+            var display = "Items with two or more quantities:\n\n"
 
+            //Variable to check if any qualifying items were found
+            var found = false
+
+            //Counter to loop through the arrays
+            var i = 0
+
+            //Looping through all items
+            while (i < items.size) {
+                //Displaying items where quantity is 2 or more
+                if (quantities[i] >= 2) {
+                    display += " ${items[i]} - Quantity: ${quantities[i]}\n\n"
+                    found = true
+                }
+                //Moving to next item 
+                i++
+
+            }
+        }
             //Error Handling to check if items in array are missing
 
 
