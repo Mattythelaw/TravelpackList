@@ -14,7 +14,11 @@ class MainActivity : AppCompatActivity() {
     //Declaring the four parallel arrays so it can be accessed in screen 2
     val items = arrayOf("T-shirts and pants", "Toothbrush", "Shoes", "Passport")
     val categories = arrayOf("Clothing", "Toiletries", "Clothing", "Documents")
+    val quantities = arrayOf(5, 1, 2, 1)
     
+
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
