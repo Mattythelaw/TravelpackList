@@ -8,4 +8,64 @@
     android:layout_height="match_parent"
     tools:context=".ItemList">
 
-  </androidx.constraintlayout.widget.ConstraintLayout>
+  <Button
+      android:id="@+id/clothingBtn"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="156dp"
+      android:layout_marginEnd="152dp"
+      android:text="Clothing"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <Button
+      android:id="@+id/toiletriesBtn"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="92dp"
+      android:layout_marginEnd="144dp"
+      android:text="Toiletries"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/clothingBtn" />
+
+  <Button
+      android:id="@+id/footwearBtn"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="167dp"
+      android:layout_marginTop="67dp"
+      android:text="Footwear"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/toiletriesBtn" />
+
+  <Button
+      android:id="@+id/docsBtn"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="160dp"
+      android:layout_marginTop="68dp"
+      android:text="Documents"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/footwearBtn" />
+
+  <TextView
+      android:id="@+id/clothingItems"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="179dp"
+      android:layout_marginTop="21dp"
+      android:text="TextView"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/clothingBtn" />
+
+  <TextView
+      android:id="@+id/toiletryItem"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="181dp"
+      android:layout_marginTop="11dp"
+      android:text="TextView"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/toiletriesBtn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

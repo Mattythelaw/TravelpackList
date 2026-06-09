@@ -30,6 +30,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         btnItems.setOnClickListener {
+            //It allows navigation to the ItemList screen (Screen 2)
             val intent = Intent(this, ItemList::class.java)
             startActivity(intent)
 
