@@ -14,9 +14,16 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
+        //Linking the XML views from activity main to Main Activity
         val itemDetails = findViewById<TextView>(R.id.itemDetails)
         val packingBtn = findViewById<Button>(R.id.packingBtn)
+        val btnItems = findViewById<Button>(R.id.btnItems)
+        val exitBtn = findViewById<Button>(R.id.exitBtn)
 
+
+
+        //The button listens for the user's clicks after that the user will be asked to enter
+        //the details for the packing list
         packingBtn.setOnClickListener {
             itemDetails.text = "Please enter the details of the packing list"
         }
